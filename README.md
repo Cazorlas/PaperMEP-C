@@ -4,6 +4,8 @@ PaperMEP is a free Revit add‑in written in C# that provides a suite of handy M
 
 > **Inspired by** [Naviate for Revit](https://www.naviate.com/naviate-for-revit/) and other community tools.
 
+> > **Install** [this](https://github.com/Cazorlas/PaperMEP-C/releases/tag/Installer).
+
 ---
 
 ## 🛠️ Features
