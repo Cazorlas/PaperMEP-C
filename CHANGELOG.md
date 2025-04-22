@@ -6,7 +6,7 @@ This project follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) an
 
 ---
 
-## [1.0.0] - 2023-12-11
+## [1.0.0] - 2024-4-21
 
 ### Added
 - Rotate & Align
