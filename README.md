@@ -31,11 +31,14 @@ Stacked Pull‑down buttons for elbows at 15° / 30° / 45° / 60° / 90
 
 ### Move & Connect
 - **Move & Connect**  
-- **Move & Connect Align**  
+- **Move & Connect Align**
+- - **Disconnect** — break two connected elements  
+- **Delete System** — remove an entire system route  
 
 ### Utility
-- **Disconnect** — break two connected elements  
-- **Delete System** — remove an entire system route  
+- **Split Duct** — split the ducts
+- **MEP UpDown** — move up or down elements
+- **...**
 
 ---
 
