@@ -1,0 +1,1851 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ricaun.Revit.UI.0.8.0</name>
+    </assembly>
+    <members>
+        <member name="T:ricaun.Revit.UI.AppLoaderAttribute">
+            <summary>
+            AppLoader Attribute for ricaun.AppLoader
+            </summary>
+        </member>
+        <member name="T:ricaun.Revit.UI.AutodeskExtension">
+            <summary>
+            AutodeskExtension
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.AutodeskExtension.SetForegroundWindow(System.IntPtr)">
+            <summary>
+            Sets the foreground ActiveWindow.
+            </summary>
+            <param name="hWnd">The h WND.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.AutodeskExtension.SetAutodeskOwner(System.Windows.Window)">
+            <summary>
+            Set Autodesk.Windows as the Owner of the Window and Active Autodesk.Windows when Closed
+            </summary>
+            <param name="window"></param>
+        </member>
+        <member name="M:ricaun.Revit.UI.AutodeskExtension.GetAutodeskOwner">
+            <summary>
+            Get Autodesk.Windows as the Owner Window
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:ricaun.Revit.UI.AutodeskExtension.IsApplicationActive">
+            <summary>
+            Is Application is Active
+            </summary>
+        </member>
+        <member name="T:ricaun.Revit.UI.BitmapExtension">
+            <summary>
+            BitmapExtension
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.BitmapExtension.GetBitmapSource(System.String)">
+            <summary>
+            Transform string base64 or Uri to BitmapSource
+            </summary>
+            <param name="base64orUri"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.BitmapExtension.Scale(System.Windows.Media.Imaging.BitmapSource,System.Double)">
+            <summary>
+            Scale <paramref name="bitmapSource"/>
+            </summary>
+            <param name="bitmapSource"></param>
+            <param name="scale"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.BitmapExtension.Scale(System.Windows.Media.ImageSource,System.Double)">
+            <summary>
+            Scale <paramref name="imageSource"/>
+            </summary>
+            <param name="imageSource"></param>
+            <param name="scale"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.BitmapExtension.GetSystemDpi">
+            <summary>
+            Get the system DPI based on the <see cref="M:System.Windows.Media.VisualTreeHelper.GetDpi(System.Windows.Media.Visual)"/> using a new <see cref="T:System.Windows.Controls.Image"/>.
+            </summary>
+        </member>
+        <member name="F:ricaun.Revit.UI.BitmapExtension.SystemDpi">
+            <summary>
+            System Dpi
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.BitmapExtension.GetBitmapFrameByWidthAndDpi(System.Windows.Media.Imaging.BitmapDecoder,System.Int32,System.Int32)">
+            <summary>
+            Get the bitmap frame from the <paramref name="bitmapDecoder"/> based on the DPI and width.
+            </summary>
+            <param name="bitmapDecoder">The bitmap decoder.</param>
+            <param name="width">The desired width of the bitmap frame. When set to zero, the smallest width frame is returned.</param>
+            <param name="dpi">The optimal dpi for the frame. When set to zero, <see cref="F:ricaun.Revit.UI.BitmapExtension.SystemDpi"/> is used.</param>
+            <returns>The bitmap frame with the specified width or the smallest width frame.</returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.BitmapExtension.GetBitmapFrame``1(``0,System.Int32,System.Action{``0})">
+            <summary>
+            GetBitmapFrame with Width Equal or Scale
+            </summary>
+            <param name="imageSource">The image source.</param>
+            <param name="width">The desired width of the bitmap frame. When set to zero, the smallest width frame is returned.</param>
+            <param name="downloadCompleted">An optional action to be executed when the download of the bitmap frame is completed.</param>
+            <returns>The bitmap frame with the specified width or the scaled bitmap frame.</returns>
+            <remarks>When <paramref name="width"/> is zero, the smallest width frame is returned.</remarks>
+        </member>
+        <member name="T:ricaun.Revit.UI.Drawing.BitmapDrawingExtension">
+            <summary>
+            BitmapDrawingExtension
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.Drawing.BitmapDrawingExtension.GetBitmapSource(System.Drawing.Bitmap)">
+            <summary>
+            Convert <paramref name="bitmap"/> to <seealso cref="T:System.Windows.Media.Imaging.BitmapSource"/>
+            </summary>
+            <param name="bitmap"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.Drawing.BitmapDrawingExtension.GetBitmapSource(System.Drawing.Icon)">
+            <summary>
+            Convert <paramref name="icon"/> to <seealso cref="T:System.Windows.Media.Imaging.BitmapSource"/>
+            </summary>
+            <param name="icon"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.Drawing.BitmapDrawingExtension.GetBitmapSource(System.Drawing.Image)">
+            <summary>
+            Convert <paramref name="image"/> to <seealso cref="T:System.Windows.Media.Imaging.BitmapSource"/>
+            </summary>
+            <param name="image"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ricaun.Revit.UI.LanguageExtension">
+            <summary>
+            LanguageExtension
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.LanguageExtension.IsEnglish">
+            <summary>
+            Is LanguageType == LanguageType.English_USA
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.LanguageExtension.IsFrench">
+            <summary>
+            Is LanguageType == LanguageType.French
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.LanguageExtension.IsGerman">
+            <summary>
+            Is LanguageType == LanguageType.German
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.LanguageExtension.IsItalian">
+            <summary>
+            Is LanguageType == LanguageType.Italian
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.LanguageExtension.IsJapanese">
+            <summary>
+            Is LanguageType == LanguageType.Japanese
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.LanguageExtension.IsKorean">
+            <summary>
+            Is LanguageType == LanguageType.Korean
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.LanguageExtension.IsPolish">
+            <summary>
+            Is LanguageType == LanguageType.Polish
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.LanguageExtension.IsSpanish">
+            <summary>
+            Is LanguageType == LanguageType.Spanish
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.LanguageExtension.IsChineseSimplified">
+            <summary>
+            Is LanguageType == LanguageType.Chinese_Simplified
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.LanguageExtension.IsChineseTraditional">
+            <summary>
+            Is LanguageType == LanguageType.Chinese_Traditional
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.LanguageExtension.IsBrazilianPortuguese">
+            <summary>
+            Is LanguageType == LanguageType.Brazilian_Portuguese
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.LanguageExtension.IsRussian">
+            <summary>
+            Is LanguageType == LanguageType.Russian
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.LanguageExtension.IsCzech">
+            <summary>
+            Is LanguageType == LanguageType.Czech
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.LanguageExtension.GetLanguageType">
+            <summary>
+            Get Base LanguageType
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.LanguageExtension.GetCultureInfoName(Autodesk.Revit.ApplicationServices.LanguageType)">
+            <summary>
+            Get LanguageType as CultureInfoName
+            </summary>
+            <param name="languageType"></param>
+            <returns></returns>
+            <remarks>LanguageType.Unknown or not valid return null, check <see cref="M:ricaun.Revit.UI.LanguageExtension.GetLanguages"/> available.</remarks>
+        </member>
+        <member name="M:ricaun.Revit.UI.LanguageExtension.GetLanguages">
+            <summary>
+            Get LanguageType by Culture Key
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.LanguageExtension.GetLanguageType(System.Globalization.CultureInfo)">
+            <summary>
+            Get CultureInfo LanguageType
+            </summary>
+            <param name="cultureInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.LanguageExtension.GetCultureInfo">
+            <summary>
+            Get CurrentUICulture
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ricaun.Revit.UI.ObservableCollectionExtension">
+            <summary>
+            ObservableCollectionExtension
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.ObservableCollectionExtension.Sort``1(System.Collections.ObjectModel.ObservableCollection{``0},System.Comparison{``0})">
+            <summary>
+            Sort <paramref name="collection"/>
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collection"></param>
+            <param name="comparison"></param>
+        </member>
+        <member name="M:ricaun.Revit.UI.ObservableCollectionExtension.OrderBy``2(System.Collections.ObjectModel.ObservableCollection{``0},System.Func{``0,``1})">
+            <summary>
+            OrderBy <paramref name="collection"/>
+            </summary>
+            <typeparam name="TSource"></typeparam>
+            <typeparam name="TKey"></typeparam>
+            <param name="collection"></param>
+            <param name="keySelector"></param>
+        </member>
+        <member name="M:ricaun.Revit.UI.ObservableCollectionExtension.OrderByDescending``2(System.Collections.ObjectModel.ObservableCollection{``0},System.Func{``0,``1})">
+            <summary>
+            OrderByDescending <paramref name="collection"/>
+            </summary>
+            <typeparam name="TSource"></typeparam>
+            <typeparam name="TKey"></typeparam>
+            <param name="collection"></param>
+            <param name="keySelector"></param>
+        </member>
+        <member name="M:ricaun.Revit.UI.ObservableCollectionExtension.Move``1(System.Collections.ObjectModel.ObservableCollection{``0},System.Collections.Generic.List{``0})">
+            <summary>
+            Move <paramref name="collection"/> based on <paramref name="sortableList"/>
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collection"></param>
+            <param name="sortableList"></param>
+        </member>
+        <member name="T:ricaun.Revit.UI.QuickAccessToolBarExtension">
+            <summary>
+            QuickAccessToolBarExtension
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.QuickAccessToolBarExtension.RemoveQuickAccessToolBar``1(``0)">
+            <summary>
+            Remove RibbonItem from QuickAccessToolBar
+            </summary>
+            <typeparam name="TRibbonItem"></typeparam>
+            <param name="ribbonItem"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.QuickAccessToolBarExtension.AddQuickAccessToolBar``1(``0)">
+            <summary>
+            Add RibbonItem to QuickAccessToolBar
+            </summary>
+            <typeparam name="TRibbonItem"></typeparam>
+            <param name="ribbonItem"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.QuickAccessToolBarExtension.GetQuickAccessToolBar(Autodesk.Windows.RibbonItem)">
+            <summary>
+            Get RibbonItem from QuickAccessToolBar with same Id
+            </summary>
+            <param name="ribbonItem"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.QuickAccessToolBarExtension.HasQuickAccessToolBar(Autodesk.Windows.RibbonItem)">
+            <summary>
+            Get RibbonItem from QuickAccessToolBar with same Id
+            </summary>
+            <param name="ribbonItem"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ricaun.Revit.UI.RevitApplication">
+            <summary>
+            Provides utility methods and properties for interacting with the Revit application.
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.RevitApplication.UIApplication">
+            <summary>
+            Gets the current <see cref="P:ricaun.Revit.UI.RevitApplication.UIApplication"/> instance.
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.RevitApplication.UIControlledApplication">
+            <summary>
+            Gets the current <see cref="P:ricaun.Revit.UI.RevitApplication.UIControlledApplication"/> instance.
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.RevitApplication.IsInAddInContext">
+            <summary>
+            Gets a value indicating whether the current context is within an add-in.
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.RevitApplication.GetUIControlledApplication(Autodesk.Revit.UI.UIApplication)">
+            <summary>
+            Get <see cref="T:Autodesk.Revit.UI.UIControlledApplication"/> using the <paramref name="application"/>
+            </summary>
+            <param name="application">Revit UIControlledApplication</param>
+        </member>
+        <member name="T:ricaun.Revit.UI.RevitApplicationPreview">
+            <summary>
+            Provides methods to determine if the current release of Revit is a preview release.
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.RevitApplicationPreview.IsPreviewRelease">
+            <summary>
+            Gets a value indicating whether the current release is a preview release.
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.RevitApplicationPreview.IsPreviewReleaseNotLoggedIn">
+            <summary>
+            Gets a value indicating whether the current release is a preview release and the user is not logged in.
+            </summary>
+            <remarks>Check <see cref="P:Autodesk.Revit.ApplicationServices.Application.IsLoggedIn"/> for more info.</remarks>
+        </member>
+        <member name="P:ricaun.Revit.UI.RevitApplicationPreview.IsPreviewReleaseOrLoggedIn">
+            <summary>
+            Gets a value indicating whether the current release is a preview release or the user is logged in.
+            </summary>
+            <remarks>Check <see cref="P:Autodesk.Revit.ApplicationServices.Application.IsLoggedIn"/> for more info.</remarks>
+        </member>
+        <member name="M:ricaun.Revit.UI.RevitApplicationPreview.ApplicationIsPreviewRelease">
+            <summary>
+            Determines if the current release of Revit is a preview release.
+            </summary>
+            <returns>True if the current release is a preview release; otherwise, false.</returns>
+            <remarks><see cref="T:Autodesk.Revit.ApplicationServices.Application"/> have an internal static IsPreviewRelease method.</remarks>
+        </member>
+        <member name="T:ricaun.Revit.UI.RibbonButtonExtension">
+            <summary>
+            RibbonButtonExtension
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonButtonExtension.CreatePushButton``1(Autodesk.Revit.UI.RibbonPanel,System.String)">
+            <summary>
+            CreatePushButton
+            </summary>
+            <typeparam name="TExternalCommand"></typeparam>
+            <param name="ribbonPanel"></param>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonButtonExtension.CreatePushButton``2(Autodesk.Revit.UI.RibbonPanel,System.String)">
+            <summary>
+            CreatePushButton
+            </summary>
+            <typeparam name="TExternalCommand"></typeparam>
+            <typeparam name="TAvailability"></typeparam>
+            <param name="ribbonPanel"></param>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonButtonExtension.NewPushButtonData(Autodesk.Revit.UI.RibbonPanel,System.Type,System.String)">
+            <summary>
+            NewPushButtonData
+            </summary>
+            <param name="ribbonPanel"></param>
+            <param name="commandType"></param>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonButtonExtension.NewPushButtonData``1(Autodesk.Revit.UI.RibbonPanel,System.String)">
+            <summary>
+            NewPushButtonData
+            </summary>
+            <typeparam name="TExternalCommand"></typeparam>
+            <param name="ribbonPanel"></param>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonButtonExtension.NewPushButtonData``2(Autodesk.Revit.UI.RibbonPanel,System.String)">
+            <summary>
+            NewPushButtonData
+            </summary>
+            <typeparam name="TExternalCommand"></typeparam>
+            <typeparam name="TAvailability"></typeparam>
+            <param name="ribbonPanel"></param>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonButtonExtension.SetAvailability``1(Autodesk.Revit.UI.PushButtonData)">
+            <summary>
+            SetAvailability
+            </summary>
+            <typeparam name="TAvailability"></typeparam>
+            <param name="pushButtonData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonButtonExtension.SetAvailability``1(Autodesk.Revit.UI.PushButton)">
+            <summary>
+            SetAvailability
+            </summary>
+            <typeparam name="TAvailability"></typeparam>
+            <param name="pushButton"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ricaun.Revit.UI.RibbonComboBoxExtension">
+            <summary>
+            RibbonComboBoxExtension
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonComboBoxExtension.CreateComboBox(Autodesk.Revit.UI.RibbonPanel,Autodesk.Revit.UI.ComboBoxMemberData[])">
+            <summary>
+            CreateComboBox
+            </summary>
+            <param name="ribbonPanel"></param>
+            <param name="comboBoxMemberDatas"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonComboBoxExtension.CreateComboBox(Autodesk.Revit.UI.RibbonPanel,System.String,Autodesk.Revit.UI.ComboBoxMemberData[])">
+            <summary>
+            CreateComboBox
+            </summary>
+            <param name="ribbonPanel"></param>
+            <param name="targetText"></param>
+            <param name="comboBoxMemberDatas"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonComboBoxExtension.AddComboBoxMembers(Autodesk.Revit.UI.ComboBox,Autodesk.Revit.UI.ComboBoxMemberData[])">
+            <summary>
+            AddComboBoxMembers
+            </summary>
+            <param name="comboBox"></param>
+            <param name="comboBoxMemberDatas"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonComboBoxExtension.SetWidth(Autodesk.Revit.UI.ComboBox,System.Double)">
+            <summary>
+            SetWidth
+            </summary>
+            <param name="comboBox"></param>
+            <param name="width"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonComboBoxExtension.SetCurrent(Autodesk.Revit.UI.ComboBox,Autodesk.Revit.UI.ComboBoxMember)">
+            <summary>
+            SetCurrent
+            </summary>
+            <param name="comboBox"></param>
+            <param name="current"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonComboBoxExtension.AddCurrentChanged(Autodesk.Revit.UI.ComboBox,System.EventHandler{Autodesk.Revit.UI.Events.ComboBoxCurrentChangedEventArgs})">
+            <summary>
+            AddCurrentChanged
+            </summary>
+            <param name="comboBox"></param>
+            <param name="currentChanged"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonComboBoxExtension.RemoveCurrentChanged(Autodesk.Revit.UI.ComboBox,System.EventHandler{Autodesk.Revit.UI.Events.ComboBoxCurrentChangedEventArgs})">
+            <summary>
+            RemoveCurrentChanged
+            </summary>
+            <param name="comboBox"></param>
+            <param name="currentChanged"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonComboBoxExtension.AddDropDownOpened(Autodesk.Revit.UI.ComboBox,System.EventHandler{Autodesk.Revit.UI.Events.ComboBoxDropDownOpenedEventArgs})">
+            <summary>
+            AddDropDownOpened
+            </summary>
+            <param name="comboBox"></param>
+            <param name="dropDownOpened"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonComboBoxExtension.RemoveDropDownOpened(Autodesk.Revit.UI.ComboBox,System.EventHandler{Autodesk.Revit.UI.Events.ComboBoxDropDownOpenedEventArgs})">
+            <summary>
+            RemoveDropDownOpened
+            </summary>
+            <param name="comboBox"></param>
+            <param name="dropDownOpened"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonComboBoxExtension.AddDropDownClosed(Autodesk.Revit.UI.ComboBox,System.EventHandler{Autodesk.Revit.UI.Events.ComboBoxDropDownClosedEventArgs})">
+            <summary>
+            AddDropDownClosed
+            </summary>
+            <param name="comboBox"></param>
+            <param name="dropDownClosed"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonComboBoxExtension.RemoveDropDownClosed(Autodesk.Revit.UI.ComboBox,System.EventHandler{Autodesk.Revit.UI.Events.ComboBoxDropDownClosedEventArgs})">
+            <summary>
+            RemoveDropDownClosed
+            </summary>
+            <param name="comboBox"></param>
+            <param name="dropDownClosed"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonComboBoxExtension.CreateComboBoxMember(Autodesk.Revit.UI.ComboBox,System.String,System.String)">
+            <summary>
+            CreateComboBoxMember
+            </summary>
+            <param name="comboBox"></param>
+            <param name="targetName"></param>
+            <param name="groupName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonComboBoxExtension.NewComboBoxData(Autodesk.Revit.UI.RibbonPanel,System.String)">
+            <summary>
+            NewComboBoxData
+            </summary>
+            <param name="ribbonPanel"></param>
+            <param name="targetName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonComboBoxExtension.SetGroupName(Autodesk.Revit.UI.ComboBoxMemberData,System.String)">
+            <summary>
+            SetGroupName
+            </summary>
+            <param name="comboBoxMemberData"></param>
+            <param name="groupName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonComboBoxExtension.NewComboBoxMemberData(Autodesk.Revit.UI.RibbonPanel,System.String)">
+            <summary>
+            NewComboBoxMemberData
+            </summary>
+            <param name="ribbonPanel"></param>
+            <param name="targetName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ricaun.Revit.UI.RibbonSettings">
+            <summary>
+            RibbonSettings
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonSettings.#ctor">
+            <summary>
+            RibbonSettings
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonSettings.TryGetValue(System.String,System.Collections.Generic.List{ricaun.Revit.UI.RibbonDescription}@)">
+            <summary>
+            Get Value
+            </summary>
+            <param name="name"></param>
+            <param name="ribbonDescriptions"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonSettings.Add(System.String,ricaun.Revit.UI.RibbonDescription)">
+            <summary>
+            Add <see cref="T:ricaun.Revit.UI.RibbonDescription"/>
+            </summary>
+            <param name="name"></param>
+            <param name="ribbonDescription"></param>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonSettings.Add(System.String,ricaun.Revit.UI.RibbonDescription[])">
+            <summary>
+            Add <see cref="T:ricaun.Revit.UI.RibbonDescription"/>
+            </summary>
+            <param name="name"></param>
+            <param name="ribbonDescriptions"></param>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonSettings.Add``1(ricaun.Revit.UI.RibbonDescription[])">
+            <summary>
+            Add <see cref="T:ricaun.Revit.UI.RibbonDescription"/>
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="ribbonDescriptions"></param>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonSettings.Add(System.String,System.Action{ricaun.Revit.UI.RibbonDescription}[])">
+            <summary>
+            Add <see cref="T:ricaun.Revit.UI.RibbonDescription"/> Action
+            </summary>
+            <param name="name"></param>
+            <param name="actionRibbonDescriptions"></param>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonSettings.Add``1(System.Action{ricaun.Revit.UI.RibbonDescription}[])">
+            <summary>
+            Add <see cref="T:ricaun.Revit.UI.RibbonDescription"/> Action
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="actionRibbonDescriptions"></param>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonSettings.AddDefault(System.Action{ricaun.Revit.UI.RibbonDescription}[])">
+            <summary>
+            Add Default
+            </summary>
+            <param name="actionRibbonDescriptions"></param>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonSettings.AddDefault(ricaun.Revit.UI.RibbonDescription[])">
+            <summary>
+            Add Default
+            </summary>
+            <param name="ribbonDescriptions"></param>
+        </member>
+        <member name="P:ricaun.Revit.UI.RibbonSettings.Count">
+            <summary>
+            Get Count
+            </summary>
+        </member>
+        <member name="T:ricaun.Revit.UI.RibbonDescription">
+            <summary>
+            RibbonDescription
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonDescription.#ctor(Autodesk.Revit.ApplicationServices.LanguageType)">
+            <summary>
+            RibbonDescription with LanguageType
+            </summary>
+            <param name="LanguageType"></param>
+        </member>
+        <member name="P:ricaun.Revit.UI.RibbonDescription.LanguageType">
+            <summary>
+            LanguageType
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.RibbonDescription.Text">
+            <summary>
+            Text
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.RibbonDescription.ToolTip">
+            <summary>
+            ToolTip
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.RibbonDescription.LongDescription">
+            <summary>
+            LongDescription
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.RibbonDescription.Help">
+            <summary>
+            Help
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.RibbonDescription.Image">
+            <summary>
+            Image
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.RibbonDescription.LargeImage">
+            <summary>
+            LargeImage
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.RibbonDescription.ToolTipImage">
+            <summary>
+            ToolTipImage
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.RibbonDescription.Action">
+            <summary>
+            Action
+            </summary>
+        </member>
+        <member name="T:ricaun.Revit.UI.RibbonDescriptionExtension">
+            <summary>
+            RibbonDescriptionExtension
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonDescriptionExtension.UpdateRibbonDescription(Autodesk.Revit.UI.RibbonPanel,System.Action{ricaun.Revit.UI.RibbonSettings})">
+            <summary>
+            Update RibbonPanel RibbonSettings
+            </summary>
+            <param name="ribbonPanel"></param>
+            <param name="setting"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonDescriptionExtension.UpdateRibbonDescription``1(``0,ricaun.Revit.UI.RibbonDescription)">
+            <summary>
+            Update RibbonDescription
+            </summary>
+            <typeparam name="TRibbonItem">RibbonItem</typeparam>
+            <param name="ribbonItem"></param>
+            <param name="description"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ricaun.Revit.UI.RibbonDialogLauncherExtension">
+            <summary>
+            RibbonDialogLauncherExtension
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonDialogLauncherExtension.SetDialogLauncher(Autodesk.Revit.UI.RibbonPanel,Autodesk.Revit.UI.PushButton)">
+            <summary>
+            Moves the <paramref name="pushButton"/> to the DialogLauncher of the <paramref name="ribbonPanel"/>
+            </summary>
+            <param name="ribbonPanel"></param>
+            <param name="pushButton"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonDialogLauncherExtension.GetDialogLauncher(Autodesk.Windows.RibbonPanel)">
+            <summary>
+            GetDialogLauncher
+            </summary>
+            <param name="ribbonPanel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonDialogLauncherExtension.SetDialogLauncher(Autodesk.Windows.RibbonPanel,Autodesk.Windows.RibbonCommandItem)">
+            <summary>
+            SetDialogLauncher
+            </summary>
+            <param name="ribbonPanel"></param>
+            <param name="ribbonCommandItem"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ricaun.Revit.UI.RibbonHelpExtension">
+            <summary>
+            RibbonHelpExtension
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonHelpExtension.GetContextualHelp(System.String)">
+            <summary>
+            Get ContextualHelp by <paramref name="helpPath"/>
+            </summary>
+            <param name="helpPath"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ricaun.Revit.UI.RibbonItemDataExtension">
+            <summary>
+            RibbonItemDataExtension
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonItemDataExtension.SetContextualHelp``1(``0,System.String)">
+            <summary>
+            Sets the contextual help bound with this RibbonItemData.
+            </summary>
+            <typeparam name="TRibbonItem">RibbonItemData</typeparam>
+            <param name="ribbonItem"></param>
+            <param name="helpPath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonItemDataExtension.SetToolTip``1(``0,System.String)">
+            <summary>
+            Set RibbonItemData ToolTip
+            </summary>
+            <typeparam name="TRibbonItem">RibbonItemData</typeparam>
+            <param name="ribbonItem"></param>
+            <param name="toolTip"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonItemDataExtension.SetLongDescription``1(``0,System.String)">
+            <summary>
+            Set RibbonItemData LongDescription
+            </summary>
+            <typeparam name="TRibbonItem">RibbonItemData</typeparam>
+            <param name="ribbonItem"></param>
+            <param name="longDescription"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonItemDataExtension.SetToolTipImage``1(``0,System.Windows.Media.ImageSource)">
+            <summary>
+            Set RibbonItemData ToolTipImage
+            </summary>
+            <typeparam name="TRibbonItem">RibbonItemData</typeparam>
+            <param name="ribbonItem"></param>
+            <param name="toolTipImage"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonItemDataExtension.SetToolTipImage``1(``0,System.String)">
+            <summary>
+            Set RibbonItemData ToolTipImage
+            </summary>
+            <typeparam name="TRibbonItem">RibbonItemData</typeparam>
+            <param name="ribbonItem"></param>
+            <param name="toolTipImage"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonItemDataExtension.SetText``1(``0,System.String)">
+            <summary>
+            Set ButtonData Text
+            </summary>
+            <typeparam name="TRibbonItem">ButtonData</typeparam>
+            <param name="ribbonItem"></param>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonItemDataExtension.SetImage``1(``0,System.String)">
+            <summary>
+            Set ButtonData/ComboBoxData/ComboBoxMemberData/TextBoxData Image
+            </summary>
+            <typeparam name="TRibbonItem"></typeparam>
+            <param name="ribbonItem"></param>
+            <param name="image"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonItemDataExtension.SetLargeImage``1(``0,System.String)">
+            <summary>
+            Set ButtonData/ComboBoxData/ComboBoxMemberData/TextBoxData LargeImage
+            </summary>
+            <typeparam name="TRibbonItem"></typeparam>
+            <param name="ribbonItem"></param>
+            <param name="largeImage"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonItemDataExtension.SetImage``1(``0,System.Windows.Media.ImageSource)">
+            <summary>
+            Set ButtonData/ComboBoxData/ComboBoxMemberData/TextBoxData Image
+            </summary>
+            <typeparam name="TRibbonItem">ButtonData</typeparam>
+            <param name="ribbonItem"></param>
+            <param name="image"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonItemDataExtension.SetLargeImage``1(``0,System.Windows.Media.ImageSource)">
+            <summary>
+            Set ButtonData/ComboBoxData/ComboBoxMemberData/TextBoxData LargeImage
+            </summary>
+            <typeparam name="TRibbonItem">ButtonData</typeparam>
+            <param name="ribbonItem"></param>
+            <param name="largeImage"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ricaun.Revit.UI.RibbonItemExtension">
+            <summary>
+            RibbonItemExtension
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonItemExtension.SetContextualHelp``1(``0,System.String)">
+            <summary>
+            Sets the contextual help bound with this RibbonItem.
+            </summary>
+            <typeparam name="TRibbonItem">RibbonItem</typeparam>
+            <param name="ribbonItem"></param>
+            <param name="helpPath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonItemExtension.SetShowText``1(``0,System.Boolean)">
+            <summary>
+            Enable / Disable Show Text
+            </summary>
+            <typeparam name="TRibbonItem">RibbonItem</typeparam>
+            <param name="ribbonItem"></param>
+            <param name="showText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonItemExtension.SetShowImage``1(``0,System.Boolean)">
+            <summary>
+            Enable / Disable Show Image
+            </summary>
+            <typeparam name="TRibbonItem">RibbonItem</typeparam>
+            <param name="ribbonItem"></param>
+            <param name="showImage"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonItemExtension.SetItemSize``1(``0,Autodesk.Windows.RibbonItemSize)">
+            <summary>
+            Set RibbonItemSize
+            </summary>
+            <typeparam name="TRibbonItem">RibbonItem</typeparam>
+            <param name="ribbonItem"></param>
+            <param name="itemSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonItemExtension.SetText``1(``0,System.String)">
+            <summary>
+            Set RibbonItem Text
+            </summary>
+            <typeparam name="TRibbonItem">RibbonItem</typeparam>
+            <param name="ribbonItem"></param>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonItemExtension.SetToolTip``1(``0,System.String)">
+            <summary>
+            Set RibbonItem ToolTip
+            </summary>
+            <typeparam name="TRibbonItem">RibbonItem</typeparam>
+            <param name="ribbonItem"></param>
+            <param name="toolTip"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonItemExtension.SetLongDescription``1(``0,System.String)">
+            <summary>
+            Set RibbonItem LongDescription
+            </summary>
+            <typeparam name="TRibbonItem">RibbonItem</typeparam>
+            <param name="ribbonItem"></param>
+            <param name="longDescription"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonItemExtension.SetToolTipImage``1(``0,System.Windows.Media.ImageSource)">
+            <summary>
+            Set RibbonItem ToolTipImage
+            </summary>
+            <typeparam name="TRibbonItem">RibbonItem</typeparam>
+            <param name="ribbonItem"></param>
+            <param name="toolTipImage"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonItemExtension.SetToolTipImage``1(``0,System.String)">
+            <summary>
+            Set RibbonItem ToolTipImage
+            </summary>
+            <typeparam name="TRibbonItem"></typeparam>
+            <param name="ribbonItem"></param>
+            <param name="toolTipImage"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonItemExtension.SetImage``1(``0,System.String)">
+            <summary>
+            Set RibbonButton/ComboBox/ComboBoxMember/TextBox Image
+            </summary>
+            <typeparam name="TRibbonItem"></typeparam>
+            <param name="ribbonItem"></param>
+            <param name="image"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonItemExtension.SetLargeImage``1(``0,System.String)">
+            <summary>
+            Set RibbonButton/ComboBox/ComboBoxMember/TextBox LargeImage
+            </summary>
+            <typeparam name="TRibbonItem"></typeparam>
+            <param name="ribbonItem"></param>
+            <param name="largeImage"></param>
+            <returns></returns>
+            <remarks>When <see cref="T:Autodesk.Revit.UI.ComboBox"/>, <see cref="T:Autodesk.Revit.UI.ComboBoxMember"/> or <see cref="T:Autodesk.Revit.UI.TextBox"/> does not have LargeImage, the Image is changed instead.</remarks>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonItemExtension.SetImage``1(``0,System.Windows.Media.ImageSource)">
+            <summary>
+            Set RibbonButton/ComboBox/ComboBoxMember/TextBox Image
+            </summary>
+            <typeparam name="TRibbonItem">RibbonButton</typeparam>
+            <param name="ribbonItem"></param>
+            <param name="image"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonItemExtension.SetLargeImage``1(``0,System.Windows.Media.ImageSource)">
+            <summary>
+            Set RibbonButton/ComboBox/ComboBoxMember/TextBox LargeImage
+            </summary>
+            <typeparam name="TRibbonItem">RibbonButton</typeparam>
+            <param name="ribbonItem"></param>
+            <param name="largeImage"></param>
+            <returns></returns>
+            <remarks>When <see cref="T:Autodesk.Revit.UI.ComboBox"/>, <see cref="T:Autodesk.Revit.UI.ComboBoxMember"/> or <see cref="T:Autodesk.Revit.UI.TextBox"/> does not have LargeImage, the Image is changed instead.</remarks>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonItemExtension.SetListImageSize``1(``0,Autodesk.Windows.RibbonImageSize)">
+            <summary>
+            Set ListImageSize in PulldownButton or SplitButton
+            </summary>
+            <typeparam name="TPulldownButton">PulldownButton</typeparam>
+            <param name="pulldownButton"></param>
+            <param name="listImageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonItemExtension.AddQuickAccessToolBar``1(``0)">
+            <summary>
+            Add RibbonItem to QuickAccessToolBar
+            </summary>
+            <typeparam name="TRibbonItem"></typeparam>
+            <param name="ribbonItem"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonItemExtension.RemoveQuickAccessToolBar``1(``0)">
+            <summary>
+            Add RibbonItem to QuickAccessToolBar
+            </summary>
+            <typeparam name="TRibbonItem"></typeparam>
+            <param name="ribbonItem"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ricaun.Revit.UI.RibbonPanelExtension">
+            <summary>
+            RibbonPanelExtension
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonPanelExtension.CreatePanel(Autodesk.Revit.UI.UIControlledApplication,System.String)">
+            <summary>
+            Create RibbonPanel
+            </summary>
+            <param name="application"></param>
+            <param name="panelName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonPanelExtension.CreateOrSelectPanel(Autodesk.Revit.UI.UIControlledApplication,System.String)">
+            <summary>
+            Create or Select RibbonPanel with Name EndsWith <paramref name="panelName"/>
+            </summary>
+            <param name="application"></param>
+            <param name="panelName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonPanelExtension.CreatePanel(Autodesk.Revit.UI.UIControlledApplication,System.String,System.String)">
+            <summary>
+            Create RibbonPanel
+            </summary>
+            <param name="application"></param>
+            <param name="tabName"></param>
+            <param name="panelName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonPanelExtension.CreateOrSelectPanel(Autodesk.Revit.UI.UIControlledApplication,System.String,System.String)">
+            <summary>
+            Create or Select RibbonPanel with Name EndWith <paramref name="panelName"/> on the <paramref name="tabName"/>
+            </summary>
+            <param name="application"></param>
+            <param name="tabName"></param>
+            <param name="panelName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonPanelExtension.Remove(Autodesk.Revit.UI.RibbonPanel,System.Boolean)">
+            <summary>
+            Remove RibbonPanel from Tab
+            </summary>
+            <param name="ribbonPanel"></param>
+            <param name="removeQuickAccessToolBar"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonPanelExtension.Remove(Autodesk.Revit.UI.RibbonPanel)">
+            <summary>
+            Remove RibbonPanel from Tab
+            </summary>
+            <param name="ribbonPanel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonPanelExtension.MoveToRibbonTab(Autodesk.Revit.UI.RibbonPanel)">
+            <summary>
+            Move RibbonPanel to RibbonTab 'Modify'/>
+            </summary>
+            <param name="ribbonPanel"></param>
+            <returns></returns>
+            <remarks>The <paramref name="ribbonPanel"/> is removed from the original RibbonTab using <see cref="M:ricaun.Revit.UI.RibbonTabExtension.Remove(Autodesk.Windows.RibbonTab,Autodesk.Windows.RibbonPanel)"/></remarks>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonPanelExtension.MoveToRibbonTab(Autodesk.Revit.UI.RibbonPanel,System.String)">
+            <summary>
+            Move RibbonPanel to RibbonTab with <paramref name="ribbonTabId"/>
+            <code>'Modify' | 'Add-Ins'</code>
+            </summary>
+            <param name="ribbonPanel"></param>
+            <param name="ribbonTabId"></param>
+            <returns></returns>
+            <remarks>The <paramref name="ribbonPanel"/> is removed from the original RibbonTab using <see cref="M:ricaun.Revit.UI.RibbonTabExtension.Remove(Autodesk.Windows.RibbonTab,Autodesk.Windows.RibbonPanel)"/></remarks>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonPanelExtension.MoveToRibbonTab(Autodesk.Revit.UI.RibbonPanel,Autodesk.Windows.RibbonTab)">
+            <summary>
+            Move RibbonPanel to <paramref name="ribbonTab"/>
+            </summary>
+            <param name="ribbonPanel"></param>
+            <param name="ribbonTab"></param>
+            <returns></returns>
+            <remarks>The <paramref name="ribbonPanel"/> is removed from the original RibbonTab using <see cref="M:ricaun.Revit.UI.RibbonTabExtension.Remove(Autodesk.Windows.RibbonTab,Autodesk.Windows.RibbonPanel)"/></remarks>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonPanelExtension.GetRibbonItems(Autodesk.Revit.UI.RibbonPanel)">
+            <summary>
+            Get Each RibbonItem
+            </summary>
+            <param name="ribbonPanel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonPanelExtension.Remove(Autodesk.Revit.UI.RibbonPanel,Autodesk.Revit.UI.RibbonItem)">
+            <summary>
+            Remove <paramref name="ribbonItem"/> from <paramref name="ribbonPanel"/>
+            </summary>
+            <param name="ribbonPanel"></param>
+            <param name="ribbonItem"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonPanelExtension.MoveRibbonPanel(Autodesk.Windows.RibbonPanel,System.Int32)">
+            <summary>
+            MoveRibbonPanel to Position
+            </summary>
+            <param name="ribbonPanel"></param>
+            <param name="newIndex"></param>
+        </member>
+        <member name="T:ricaun.Revit.UI.RibbonPulldownExtension">
+            <summary>
+            RibbonPulldownExtension
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonPulldownExtension.CreatePulldownButton(Autodesk.Revit.UI.RibbonPanel,Autodesk.Revit.UI.PushButtonData[])">
+            <summary>
+            CreatePulldownButton
+            </summary>
+            <param name="ribbonPanel"></param>
+            <param name="pushButtons"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonPulldownExtension.CreatePulldownButton(Autodesk.Revit.UI.RibbonPanel,System.String,Autodesk.Revit.UI.PushButtonData[])">
+            <summary>
+            CreatePulldownButton
+            </summary>
+            <param name="ribbonPanel"></param>
+            <param name="targetText"></param>
+            <param name="pushButtons"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonPulldownExtension.AddPushButtons``1(``0,Autodesk.Revit.UI.PushButtonData[])">
+            <summary>
+            AddPushButtons
+            </summary>
+            <param name="pulldownButton"></param>
+            <param name="pushButtons"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonPulldownExtension.CreatePushButton``1(Autodesk.Revit.UI.PulldownButton,System.String)">
+            <summary>
+            CreatePushButton
+            </summary>
+            <typeparam name="TExternalCommand"></typeparam>
+            <param name="pulldownButton"></param>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonPulldownExtension.CreatePushButton``2(Autodesk.Revit.UI.PulldownButton,System.String)">
+            <summary>
+            CreatePushButton
+            </summary>
+            <typeparam name="TExternalCommand"></typeparam>
+            <typeparam name="TAvailability"></typeparam>
+            <param name="pulldownButton"></param>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonPulldownExtension.NewPushButtonData(Autodesk.Revit.UI.PulldownButton,System.Type,System.String)">
+            <summary>
+            NewPushButtonData
+            </summary>
+            <param name="pulldownButton"></param>
+            <param name="commandType"></param>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonPulldownExtension.NewPushButtonData``1(Autodesk.Revit.UI.PulldownButton,System.String)">
+            <summary>
+            NewPushButtonData
+            </summary>
+            <typeparam name="TExternalCommand"></typeparam>
+            <param name="pulldownButton"></param>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonPulldownExtension.NewPushButtonData``2(Autodesk.Revit.UI.PulldownButton,System.String)">
+            <summary>
+            NewPushButtonData
+            </summary>
+            <typeparam name="TExternalCommand"></typeparam>
+            <typeparam name="TAvailability"></typeparam>
+            <param name="pulldownButton"></param>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ricaun.Revit.UI.RibbonRadioExtension">
+            <summary>
+            RibbonRadioExtension
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonRadioExtension.CreateRadioButtonGroup(Autodesk.Revit.UI.RibbonPanel,Autodesk.Revit.UI.ToggleButtonData[])">
+            <summary>
+            CreateRadioButtonGroup
+            </summary>
+            <param name="ribbonPanel"></param>
+            <param name="toggleButtonDatas"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonRadioExtension.CreateRadioButtonGroup(Autodesk.Revit.UI.RibbonPanel,System.String,Autodesk.Revit.UI.ToggleButtonData[])">
+            <summary>
+            CreateRadioButtonGroup
+            </summary>
+            <param name="ribbonPanel"></param>
+            <param name="targetText"></param>
+            <param name="toggleButtonDatas"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonRadioExtension.AddToggleButtons(Autodesk.Revit.UI.RadioButtonGroup,Autodesk.Revit.UI.ToggleButtonData[])">
+            <summary>
+            AddItems
+            </summary>
+            <param name="radioButtonGroup"></param>
+            <param name="toggleButtonDatas"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonRadioExtension.NewToggleButtonData(Autodesk.Revit.UI.RibbonPanel,System.String)">
+            <summary>
+            NewToggleButtonData
+            </summary>
+            <param name="ribbonPanel"></param>
+            <param name="targetName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonRadioExtension.NewToggleButtonData``1(Autodesk.Revit.UI.RibbonPanel,System.String)">
+            <summary>
+            NewToggleButtonData
+            </summary>
+            <typeparam name="TExternalCommand"></typeparam>
+            <param name="ribbonPanel"></param>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonRadioExtension.NewToggleButtonData``2(Autodesk.Revit.UI.RibbonPanel,System.String)">
+            <summary>
+            NewToggleButtonData
+            </summary>
+            <typeparam name="TExternalCommand"></typeparam>
+            <typeparam name="TAvailability"></typeparam>
+            <param name="ribbonPanel"></param>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonRadioExtension.NewToggleButtonData(Autodesk.Revit.UI.RibbonPanel,System.Type,System.String)">
+            <summary>
+            NewToggleButtonData
+            </summary>
+            <param name="ribbonPanel"></param>
+            <param name="commandType"></param>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonRadioExtension.NewRadioButtonGroupData(Autodesk.Revit.UI.RibbonPanel,System.String)">
+            <summary>
+            NewRadioButtonGroupData
+            </summary>
+            <param name="ribbonPanel"></param>
+            <param name="targetName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ricaun.Revit.UI.RibbonSafeExtension">
+            <summary>
+            RibbonSaveExtension
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonSafeExtension.SafeButtonName(System.String)">
+            <summary>
+            Safe Button Name
+            </summary>
+            <param name="buttonName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonSafeExtension.SafeRibbonPanelName(System.String)">
+            <summary>
+            Safe Ribbon Panel Name
+            </summary>
+            <param name="panelName"></param>
+            <returns></returns>
+        </member>
+        <member name="F:ricaun.Revit.UI.RibbonSafeExtension.SafeMinimalText">
+            <summary>
+            Safe Minimal Button Text
+            </summary>
+        </member>
+        <member name="F:ricaun.Revit.UI.RibbonSafeExtension._TickNumber">
+            <summary>
+            _TickNumber
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.RibbonSafeExtension.TickNumber">
+            <summary>
+            TickNumber ++ 
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonSafeExtension.VerifyNameExclusive``1(``0,System.String)">
+            <summary>
+            Verify if Panel/Item has Name
+            </summary>
+            <param name="ribbonItem"></param>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonSafeExtension.GenerateSafeButtonName``1(``0,System.String,System.String)">
+            <summary>
+            Generate Safe Button Name
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="ribbonItem"></param>
+            <param name="targetName"></param>
+            <param name="targetText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonSafeExtension.NewPushButtonData(System.Object,System.Type,System.String)">
+            <summary>
+            NewPushButtonData
+            </summary>
+            <param name="ribbonItem"></param>
+            <param name="commandType"></param>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonSafeExtension.NewPushButtonData``1(System.Object,System.Type,System.String)">
+            <summary>
+            NewPushButtonData
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="ribbonItem"></param>
+            <param name="commandType"></param>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonSafeExtension.NewPushButtonData``1(System.Object,System.String)">
+            <summary>
+            NewPushButtonData
+            </summary>
+            <typeparam name="TExternalCommand"></typeparam>
+            <param name="ribbonItem"></param>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonSafeExtension.NewPushButtonData``2(System.Object,System.String)">
+            <summary>
+            NewPushButtonData
+            </summary>
+            <typeparam name="TExternalCommand"></typeparam>
+            <typeparam name="TAvailability"></typeparam>
+            <param name="ribbonItem"></param>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ricaun.Revit.UI.RibbonSplitExtension">
+            <summary>
+            RibbonSplitExtension
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonSplitExtension.CreateSplitButton(Autodesk.Revit.UI.RibbonPanel,Autodesk.Revit.UI.PushButtonData[])">
+            <summary>
+            CreateSplitButton
+            </summary>
+            <param name="ribbonPanel"></param>
+            <param name="pushButtons"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonSplitExtension.CreateSplitButton(Autodesk.Revit.UI.RibbonPanel,System.String,Autodesk.Revit.UI.PushButtonData[])">
+            <summary>
+            CreateSplitButton
+            </summary>
+            <param name="ribbonPanel"></param>
+            <param name="targetText"></param>
+            <param name="pushButtons"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonSplitExtension.CreatePushButton``1(Autodesk.Revit.UI.SplitButton,System.String)">
+            <summary>
+            CreatePushButton
+            </summary>
+            <typeparam name="TExternalCommand"></typeparam>
+            <param name="splitButton"></param>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonSplitExtension.CreatePushButton``2(Autodesk.Revit.UI.SplitButton,System.String)">
+            <summary>
+            CreatePushButton
+            </summary>
+            <typeparam name="TExternalCommand"></typeparam>
+            <typeparam name="TAvailability"></typeparam>
+            <param name="splitButton"></param>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonSplitExtension.NewPushButtonData(Autodesk.Revit.UI.SplitButton,System.Type,System.String)">
+            <summary>
+            NewPushButtonData
+            </summary>
+            <param name="splitButton"></param>
+            <param name="commandType"></param>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonSplitExtension.NewPushButtonData``1(Autodesk.Revit.UI.SplitButton,System.String)">
+            <summary>
+            NewPushButtonData
+            </summary>
+            <typeparam name="TExternalCommand"></typeparam>
+            <param name="splitButton"></param>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonSplitExtension.NewPushButtonData``2(Autodesk.Revit.UI.SplitButton,System.String)">
+            <summary>
+            NewPushButtonData
+            </summary>
+            <typeparam name="TExternalCommand"></typeparam>
+            <typeparam name="TAvailability"></typeparam>
+            <param name="splitButton"></param>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ricaun.Revit.UI.RibbonStackExtension">
+            <summary>
+            RibbonStackExtension
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonStackExtension.RowStackedItems(Autodesk.Revit.UI.RibbonPanel,Autodesk.Revit.UI.RibbonItem[])">
+            <summary>
+            Create Row Panels and move the <paramref name="ribbonItems"/> to the new panels
+            </summary>
+            <param name="ribbonPanel"></param>
+            <param name="ribbonItems"></param>
+            <returns></returns>
+            <remarks>The <paramref name="ribbonItems"/> is divided into groups of a maximum of 3 in each RibbonRowPanel with Image size.</remarks>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonStackExtension.RowLargeStackedItems(Autodesk.Revit.UI.RibbonPanel,Autodesk.Revit.UI.RibbonItem[])">
+            <summary>
+            Create Row Panels and move the <paramref name="ribbonItems"/> to the new panels
+            </summary>
+            <param name="ribbonPanel"></param>
+            <param name="ribbonItems"></param>
+            <returns></returns>
+            <remarks>The <paramref name="ribbonItems"/> is divided into groups of a maximum of 2 in each RibbonRowPanel with LargeImage size.</remarks>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonStackExtension.FlowStackedItems(Autodesk.Revit.UI.RibbonPanel,Autodesk.Revit.UI.RibbonItem[])">
+            <summary>
+            Create Flow Panels and move the <paramref name="ribbonItems"/> to the new panels
+            </summary>
+            <param name="ribbonPanel"></param>
+            <param name="ribbonItems"></param>
+            <returns></returns>
+            <remarks>Each <paramref name="ribbonItems"/> is update to work with RibbonFlowPanel</remarks>
+        </member>
+        <member name="T:ricaun.Revit.UI.RibbonTabExtension">
+            <summary>
+            RibbonTabExtension
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonTabExtension.GetRibbonTab(Autodesk.Revit.UI.RibbonPanel)">
+            <summary>
+            GetRibbonTab
+            </summary>
+            <param name="ribbonPanel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonTabExtension.GetRibbonTab(System.String)">
+            <summary>
+            GetRibbonTab
+            </summary>
+            <param name="ribbonTabId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonTabExtension.GetRibbonTabs">
+            <summary>
+            Get GetRibbonTabs
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonTabExtension.Remove(Autodesk.Windows.RibbonTab)">
+            <summary>
+            Remove Tab / Remove Revit Dictionary Name
+            </summary>
+            <param name="ribbonTab"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonTabExtension.Remove(Autodesk.Windows.RibbonTab,Autodesk.Windows.RibbonPanel)">
+            <summary>
+            Remove RibbonPanel / Remove Revit Dictionary Name
+            </summary>
+            <param name="ribbonTab"></param>
+            <param name="ribbonPanel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonTabExtension.MoveToRibbonTab(Autodesk.Windows.RibbonTab,Autodesk.Windows.RibbonPanel)">
+            <summary>
+            MoveToRibbonTab
+            </summary>
+            <param name="ribbonTab"></param>
+            <param name="ribbonPanel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonTabExtension.SetPanelsOrderBy``1(Autodesk.Windows.RibbonTab,System.Func{Autodesk.Windows.RibbonPanel,``0})">
+            <summary>
+            Set Panels Order <paramref name="keySelector"/>
+            </summary>
+            <typeparam name="TKey"></typeparam>
+            <param name="ribbonTab"></param>
+            <param name="keySelector"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonTabExtension.SetPanelsOrderByTitle(Autodesk.Windows.RibbonTab)">
+            <summary>
+            Set Panels Order By Title
+            </summary>
+            <param name="ribbonTab"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonTabExtension.GetRibbonTabsDictionary(Autodesk.Windows.RibbonTab)">
+            <summary>
+            GetRibbonTabsDictionary
+            </summary>
+            <param name="ribbonTab"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonTabExtension.GetRibbonTabsDictionary(System.String)">
+            <summary>
+            GetRibbonTabsDictionary
+            </summary>
+            <param name="ribbonTabId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonTabExtension.GetRibbonTabsDictionary">
+            <summary>
+            GetRibbonTabsDictionary
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ricaun.Revit.UI.RibbonTextBoxExtension">
+            <summary>
+            RibbonTextBoxExtension
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonTextBoxExtension.CreateTextBox(Autodesk.Revit.UI.RibbonPanel,System.String)">
+            <summary>
+            CreateTextBox
+            </summary>
+            <param name="ribbonPanel"></param>
+            <param name="targetName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonTextBoxExtension.SetShowImageAsButton(Autodesk.Revit.UI.TextBox,System.Boolean)">
+            <summary>
+            ShowImageAsButton
+            </summary>
+            <param name="textBox"></param>
+            <param name="showImageAsButton"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonTextBoxExtension.SetSelectTextOnFocus(Autodesk.Revit.UI.TextBox,System.Boolean)">
+            <summary>
+            SetSelectTextOnFocus
+            </summary>
+            <param name="textBox"></param>
+            <param name="selectTextOnFocus"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonTextBoxExtension.SetPromptText(Autodesk.Revit.UI.TextBox,System.String)">
+            <summary>
+            SetPromptText
+            </summary>
+            <param name="textBox"></param>
+            <param name="promptText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonTextBoxExtension.SetValue(Autodesk.Revit.UI.TextBox,System.Object)">
+            <summary>
+            SetValue
+            </summary>
+            <param name="textBox"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonTextBoxExtension.SetWidth(Autodesk.Revit.UI.TextBox,System.Double)">
+            <summary>
+            SetWidth
+            </summary>
+            <param name="textBox"></param>
+            <param name="width"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonTextBoxExtension.AddEnterPressed(Autodesk.Revit.UI.TextBox,System.EventHandler{Autodesk.Revit.UI.Events.TextBoxEnterPressedEventArgs})">
+            <summary>
+            AddEnterPressed
+            </summary>
+            <param name="textBox"></param>
+            <param name="enterPressed"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonTextBoxExtension.RemoveEnterPressed(Autodesk.Revit.UI.TextBox,System.EventHandler{Autodesk.Revit.UI.Events.TextBoxEnterPressedEventArgs})">
+            <summary>
+            RemoveEnterPressed
+            </summary>
+            <param name="textBox"></param>
+            <param name="enterPressed"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonTextBoxExtension.NewTextBoxData(Autodesk.Revit.UI.RibbonPanel,System.String)">
+            <summary>
+            NewTextBoxData
+            </summary>
+            <param name="ribbonPanel"></param>
+            <param name="targetName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ricaun.Revit.UI.RibbonUtilExtension">
+            <summary>
+            RibbonUtilExtension
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonUtilExtension.GetId(Autodesk.Revit.UI.RibbonItem)">
+            <summary>
+            GetId from <paramref name="ribbonItem"/>
+            </summary>
+            <param name="ribbonItem"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonUtilExtension.GetRibbonItem_RibbonControl(Autodesk.Revit.UI.RibbonItem)">
+            <summary>
+            Get <see cref="T:Autodesk.Windows.RibbonItem"/> from <paramref name="ribbonItem"/> using RibbonControl
+            </summary>
+            <param name="ribbonItem"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonUtilExtension.GetRibbonItem(Autodesk.Revit.UI.RibbonItem)">
+            <summary>
+            Get <see cref="T:Autodesk.Windows.RibbonItem"/> from <paramref name="ribbonItem"/>
+            </summary>
+            <param name="ribbonItem"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonUtilExtension.GetRibbonItem``1(Autodesk.Revit.UI.RibbonItem)">
+            <summary>
+            Get <typeparamref name="T"/> from <paramref name="ribbonItem"/> using <see cref="M:ricaun.Revit.UI.RibbonUtilExtension.GetRibbonItem(Autodesk.Revit.UI.RibbonItem)"/>
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="ribbonItem"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonUtilExtension.GetRibbonItem``1(Autodesk.Revit.UI.RibbonItem,System.Action{``0})">
+            <summary>
+            Get <typeparamref name="T"/> from <paramref name="ribbonItem"/> using <see cref="M:ricaun.Revit.UI.RibbonUtilExtension.GetRibbonItem(Autodesk.Revit.UI.RibbonItem)"/>
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="ribbonItem"></param>
+            <param name="action"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonUtilExtension.GetRibbonItem_Alternative(Autodesk.Revit.UI.RibbonItem)">
+            <summary>
+            Get <see cref="T:Autodesk.Windows.RibbonItem"/> from <paramref name="ribbonItem"/>
+            </summary>
+            <param name="ribbonItem"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.RibbonUtilExtension.GetRibbonPanel(Autodesk.Revit.UI.RibbonPanel)">
+            <summary>
+            GetRibbonPanel
+            </summary>
+            <param name="ribbonPanel"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ricaun.Revit.UI.TypeExtension">
+            <summary>
+            TypeExtension
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.TypeExtension.GetName(System.Type)">
+            <summary>
+            Get Name of the <paramref name="type"/> with GenericArguments
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ricaun.Revit.UI.Utils.RibbonItemPanelExtension">
+            <summary>
+            RibbonItemPanelExtension
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.Utils.RibbonItemPanelExtension.AddRibbonItem(Autodesk.Windows.RibbonRowPanel,Autodesk.Windows.RibbonItem)">
+            <summary>
+            Add <paramref name="ribbonItem"/> to <paramref name="ribbonRowPanel"/> updating properties of the RibbonItem.
+            </summary>
+            <param name="ribbonRowPanel"></param>
+            <param name="ribbonItem"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.Utils.RibbonItemPanelExtension.SetRibbonItemSize(Autodesk.Windows.RibbonRowPanel[],Autodesk.Windows.RibbonItemSize)">
+            <summary>
+            Set each <paramref name="ribbonRowPanels"/> items to <paramref name="ribbonItemSize"/>
+            </summary>
+            <param name="ribbonRowPanels"></param>
+            <param name="ribbonItemSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.Utils.RibbonItemPanelExtension.SetRibbonItemSize(Autodesk.Windows.RibbonRowPanel,Autodesk.Windows.RibbonItemSize)">
+            <summary>
+            Set <paramref name="ribbonRowPanel"/> items to <paramref name="ribbonItemSize"/>
+            </summary>
+            <param name="ribbonRowPanel"></param>
+            <param name="ribbonItemSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.Utils.RibbonItemPanelExtension.AddRibbonItem(Autodesk.Windows.RibbonFlowPanel,Autodesk.Windows.RibbonItem)">
+            <summary>
+            Add <paramref name="ribbonItem"/> to <paramref name="ribbonFlowPanel"/> updating properties of the RibbonItem.
+            </summary>
+            <param name="ribbonFlowPanel"></param>
+            <param name="ribbonItem"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ricaun.Revit.UI.Utils.RibbonModifyUtils">
+            <summary>
+            RibbonModifyUtils
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.Utils.RibbonModifyUtils.RibbonTab">
+            <summary>
+            Get RibbonTab of Modify
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.Utils.RibbonModifyUtils.CreateRibbonPanel(System.String,Autodesk.Revit.UI.RibbonItem[])">
+            <summary>
+            Create Panel with <paramref name="panelName"/> to Modify Tab. And add the <paramref name="ribbonItems"/> to the Panel.
+            </summary>
+            <param name="panelName"></param>
+            <param name="ribbonItems"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.Utils.RibbonModifyUtils.CreateRibbonPanel(System.String,Autodesk.Windows.RibbonItem[])">
+            <summary>
+            Create Panel with <paramref name="panelName"/> to Modify Tab. And add the <paramref name="ribbonItems"/> to the Panel.
+            </summary>
+            <param name="panelName"></param>
+            <param name="ribbonItems"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.Utils.RibbonModifyUtils.CreateRibbonPanel(System.String)">
+            <summary>
+            Create Panel with <paramref name="panelName"/> to Modify Tab.
+            </summary>
+            <param name="panelName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.Utils.RibbonModifyUtils.RemoveRibbonPanel(System.String)">
+            <summary>
+            Remove Panel with <paramref name="panelName"/> from Modify Tab.
+            </summary>
+            <param name="panelName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ricaun.Revit.UI.Utils.RibbonTabUtils">
+            <summary>
+            RibbonTabUtils
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.Utils.RibbonTabUtils.GetPanelId(System.String)">
+            <summary>
+            Get Id for the <paramref name="panelName"/> that equals to $"ID_{panelName}". 
+            </summary>
+            <param name="panelName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.Utils.RibbonTabUtils.CreateRibbonPanel(Autodesk.Windows.RibbonTab,System.String)">
+            <summary>
+            Create <see cref="T:Autodesk.Windows.RibbonPanel"/> and add a with <paramref name="panelName"/> to <paramref name="tab"/>.
+            <code>RibbonPanel.Id uses <see cref="M:ricaun.Revit.UI.Utils.RibbonTabUtils.GetPanelId(System.String)"/></code>
+            </summary>
+            <param name="tab"></param>
+            <param name="panelName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.Utils.RibbonTabUtils.RemoveRibbonPanel(Autodesk.Windows.RibbonTab,System.String)">
+            <summary>
+            Remove <see cref="T:Autodesk.Windows.RibbonPanel"/> with <paramref name="panelName"/> from <paramref name="tab"/>
+            <code>RibbonPanel.Id uses <see cref="M:ricaun.Revit.UI.Utils.RibbonTabUtils.GetPanelId(System.String)"/></code>
+            </summary>
+            <param name="tab"></param>
+            <param name="panelName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ricaun.Revit.UI.Utils.RibbonThemeImageUtils">
+            <summary>
+            RibbonThemeImageUtils
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.Utils.RibbonThemeImageUtils.GetThemeImageSource``1(``0,System.Boolean)">
+            <summary>
+            GetThemeImageSource
+            </summary>
+            <typeparam name="TImageSource"></typeparam>
+            <param name="imageSource"></param>
+            <param name="isLight"></param>
+            <remarks>
+            Replace 'light' to 'dark' or 'dark' to 'light' in the image source name.
+            </remarks>
+        </member>
+        <member name="T:ricaun.Revit.UI.Utils.ThemeChangedEventArgs">
+            <summary>
+            ThemeChangedEventArgs
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.Utils.ThemeChangedEventArgs.IsLight">
+            <summary>
+            Theme is Light
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.Utils.ThemeChangedEventArgs.IsDark">
+            <summary>
+            Theme is Dark
+            </summary>
+        </member>
+        <member name="T:ricaun.Revit.UI.Utils.ThemeChangedEventHandler">
+            <summary>
+            ThemeChangedEventHandler for RibbonThemeUtils
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:ricaun.Revit.UI.Utils.RibbonThemeUtils">
+            <summary>
+            RibbonThemeUtils using UIFramework.ApplicationTheme
+            </summary>
+            <remarks>
+            Available for Revit 2019+
+            </remarks>
+        </member>
+        <member name="E:ricaun.Revit.UI.Utils.RibbonThemeUtils.ThemeChanged">
+            <summary>
+            ThemeChanged
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.Utils.RibbonThemeUtils.IsLight">
+            <summary>
+            Theme is Light
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.Utils.RibbonThemeUtils.IsDark">
+            <summary>
+            Theme is Dark
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.Utils.StackTraceUtils.IsAssemblyRepack">
+            <summary>
+            Check if assembly is repacked.
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.Utils.StackTraceUtils.GetAssemblyRepack">
+            <summary>
+            The current assembly does not have any resource and name starts with 'ricaun.Revit.UI' namespace.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.Utils.StackTraceUtils.GetCallingAssembly">
+            <summary>
+            GetCallingAssembly using StackTrace
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.Utils.StackTraceUtils.GetCallingAssemblyNested">
+            <summary>
+            This method is for test if <see cref="M:ricaun.Revit.UI.Utils.StackTraceUtils.GetCallingAssembly"/> is working with StackTrace.
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
