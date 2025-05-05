@@ -36,3 +36,10 @@ Please read the [CHANGELOG](https://github.com/Cazorlas/PaperMEP-C/blob/main/CHA
 ### Option B: Find on the Control Panel
 1. Open Control Panel → Programs and Features (or Settings → Apps on newer Windows).
 2. Find Paper MEP in the list and click Uninstall.
+   
+---
+
+> **My Linkdin** [this](https://www.linkedin.com/in/h%C3%B9ng-tr%E1%BB%8Bnh-v%C5%A9-tu%E1%BA%A5n-2739b32a6/).
+> > **My Youtube** [this](https://www.youtube.com/@paper.engineer).
+
+---
