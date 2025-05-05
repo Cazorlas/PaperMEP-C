@@ -39,7 +39,8 @@ Please read the [CHANGELOG](https://github.com/Cazorlas/PaperMEP-C/blob/main/CHA
    
 ---
 
-> **My Linkdin** [this](https://www.linkedin.com/in/h%C3%B9ng-tr%E1%BB%8Bnh-v%C5%A9-tu%E1%BA%A5n-2739b32a6/).
-> **My Youtube** [this](https://www.youtube.com/@paper.engineer).
+> [My Linkdin](https://www.linkedin.com/in/h%C3%B9ng-tr%E1%BB%8Bnh-v%C5%A9-tu%E1%BA%A5n-2739b32a6/).
+
+> [My Youtube](https://www.youtube.com/@paper.engineer).
 
 ---
