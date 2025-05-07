@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+	<AddIn Type="Application">
+		<Name>Paper MEP</Name>
+		<Assembly>PaperMEP\PaperMEP.dll</Assembly>
+		<AddInId>5F2ED2A5-1B9F-4ED1-B793-8FF7A25738AC</AddInId>
+		<FullClassName>PaperMEP.App.PaperMEPApp</FullClassName>
+		<VendorId>PaperEnginner</VendorId>
+		<VendorDescription>trinhvutuanhung@gmail.com</VendorDescription>
+	</AddIn>
+</RevitAddIns>

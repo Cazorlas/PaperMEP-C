@@ -1,0 +1,404 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ricaun.Revit.UI.StatusBar.1.0.0</name>
+    </assembly>
+    <members>
+        <member name="T:ricaun.Revit.UI.StatusBar.Controls.ProgressBarStackPanel">
+            <summary>
+            Interaction logic for ProgressBarStackPanel.xaml
+            </summary>
+            https://learn.microsoft.com/en-us/dotnet/desktop/wpf/controls/progressbar-styles-and-templates?view=netframeworkdesktop-4.8
+            <summary>
+            ProgressBarStackPanel
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.StatusBar.Controls.ProgressBarStackPanel.Data">
+            <summary>
+            ProgressBarData
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.Controls.ProgressBarStackPanel.#ctor">
+            <summary>
+            ProgressBarStackPanel
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.Controls.ProgressBarStackPanel.#ctor(System.Boolean)">
+            <summary>
+            ProgressBarStackPanel
+            </summary>
+            <param name="hasCancelButton"></param>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.Controls.ProgressBarStackPanel.#ctor(System.Boolean,System.Double,System.Double)">
+            <summary>
+            ProgressBarStackPanel
+            </summary>
+            <param name="hasCancelButton"></param>
+            <param name="minimumValue"></param>
+            <param name="maximumValue"></param>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.Controls.ProgressBarStackPanel.SetCurrentOperation(System.String)">
+            <summary>
+            SetCurrentOperation
+            </summary>
+            <param name="currentOperation"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ricaun.Revit.UI.StatusBar.Controls.ProgressBarStackPanel.ProgressBarData">
+            <summary>
+            ProgressBarData
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.StatusBar.Controls.ProgressBarStackPanel.ProgressBarData.IsIndeterminate">
+            <summary>
+            IsIndeterminate
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.StatusBar.Controls.ProgressBarStackPanel.ProgressBarData.CurrentOperation">
+            <summary>
+            CurrentOperation
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.StatusBar.Controls.ProgressBarStackPanel.ProgressBarData.CurrentValue">
+            <summary>
+            CurrentValue
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.StatusBar.Controls.ProgressBarStackPanel.ProgressBarData.MinimumValue">
+            <summary>
+            MinimumValue
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.StatusBar.Controls.ProgressBarStackPanel.ProgressBarData.MaximumValue">
+            <summary>
+            MaximumValue
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.StatusBar.Controls.ProgressBarStackPanel.ProgressBarData.DisplayValue">
+            <summary>
+            DisplayValue
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.StatusBar.Controls.ProgressBarStackPanel.ProgressBarData.CommandCancel">
+            <summary>
+            CommandCancel
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.StatusBar.Controls.ProgressBarStackPanel.ProgressBarData.HasCancelButton">
+            <summary>
+            HasCancelButton
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.Controls.ProgressBarStackPanel.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:ricaun.Revit.UI.StatusBar.Controls.Themes.ResourceThemesHelper">
+            <summary>
+            ResourceThemesHelper
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.Controls.Themes.ResourceThemesHelper.AddResourceThemes(System.Windows.FrameworkElement,System.String)">
+            <summary>
+            AddResourceThemes for ProgressBar
+            </summary>
+            <param name="window"></param>
+            <param name="defaultThemeName">default, light, dark</param>
+        </member>
+        <member name="T:ricaun.Revit.UI.StatusBar.Extensions.ResourceHelper">
+            <summary>
+            ResourceHelper
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.Extensions.ResourceHelper.GetResourceNames(System.Windows.FrameworkElement)">
+            <summary>
+            Get Resources with the same <paramref name="element"/> name.
+            </summary>
+            <param name="element"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.Extensions.ResourceHelper.GetResourceNames(System.Reflection.Assembly)">
+            <summary>
+            GetResourceNames
+            </summary>
+            <param name="assembly"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.Extensions.ResourceHelper.GetAbsoluteUri(System.String,System.Reflection.Assembly)">
+            <summary>
+            GetAbsoluteUri
+            </summary>
+            <param name="path"></param>
+            <param name="assembly"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.Extensions.ResourceHelper.SimilarSource(System.Windows.ResourceDictionary,System.Windows.ResourceDictionary)">
+            <summary>
+            SimilarSource
+            </summary>
+            <param name="resource"></param>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ricaun.Revit.UI.StatusBar.Extensions.VisualTreeHelperUtils">
+            <summary>
+            VisualTreeHelperUtils
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.Extensions.VisualTreeHelperUtils.FindParent``1(System.Windows.DependencyObject)">
+            <summary>
+            FindParent
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="child"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.Extensions.VisualTreeHelperUtils.FindParent``1(System.Windows.DependencyObject,System.String)">
+            <summary>
+            FindParent
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="child"></param>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.Extensions.VisualTreeHelperUtils.FindChild``1(System.Windows.DependencyObject)">
+            <summary>
+            FindChild
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="parent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.Extensions.VisualTreeHelperUtils.FindChild``1(System.Windows.DependencyObject,System.String)">
+            <summary>
+            FindChild
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="parent"></param>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ricaun.Revit.UI.StatusBar.RevitProgressBar">
+            <summary>
+            RevitProgressBar
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.RevitProgressBar.#ctor(System.Boolean)">
+            <summary>
+            RevitProgressBar
+            </summary>
+            <param name="hasCancelButton"></param>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.RevitProgressBar.Run(System.String,System.Int32,System.Action{System.Int32})">
+            <summary>
+            Run
+            </summary>
+            <param name="currentOperation"></param>
+            <param name="count"></param>
+            <param name="action"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.RevitProgressBar.Run(System.Int32,System.Action{System.Int32})">
+            <summary>
+            Run
+            </summary>
+            <param name="count"></param>
+            <param name="action"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.RevitProgressBar.Run``1(System.String,System.Collections.Generic.IEnumerable{``0},System.Action{``0})">
+            <summary>
+            Run
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="currentOperation"></param>
+            <param name="collection"></param>
+            <param name="action"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.RevitProgressBar.Run``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})">
+            <summary>
+            Run
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collection"></param>
+            <param name="action"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.RevitProgressBar.SetCurrentOperation(System.String)">
+            <summary>
+            SetCurrentOperation
+            </summary>
+            <param name="currentOperation"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.RevitProgressBar.SetCurrentValue(System.Double)">
+            <summary>
+            SetCurrentValue
+            </summary>
+            <param name="currentValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.RevitProgressBar.SetMinimumValue(System.Double)">
+            <summary>
+            SetMinimumValue
+            </summary>
+            <param name="minimumValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.RevitProgressBar.SetMaximumValue(System.Double)">
+            <summary>
+            SetMaximumValue
+            </summary>
+            <param name="maximumValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.RevitProgressBar.SetIsIndeterminate(System.Boolean)">
+            <summary>
+            SetIsIndeterminate
+            </summary>
+            <param name="isIndeterminate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.RevitProgressBar.SetHasCancelButton(System.Boolean)">
+            <summary>
+            SetHasCancelButton
+            </summary>
+            <param name="hasCancelButton"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.RevitProgressBar.Increment(System.Int32)">
+            <summary>
+            Increment
+            </summary>
+            <param name="incrementCurrentValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.RevitProgressBar.IsCancelling">
+            <summary>
+            IsCancelling
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.RevitProgressBar.Cancel">
+            <summary>
+            Cancel
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.RevitProgressBar.Dispose">
+            <summary>
+            Dispose
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.StatusBar.RevitProgressBar.RefreshMilliseconds">
+            <summary>
+            Refresh Milliseconds (default: 50)
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.StatusBar.RevitProgressBar.InitializeMilliseconds">
+            <summary>
+            Initialize Milliseconds (default: 250)
+            </summary>
+        </member>
+        <member name="T:ricaun.Revit.UI.StatusBar.RevitProgressBarUtils">
+            <summary>
+            RevitProgressBarUtils
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.RevitProgressBarUtils.Run(System.String,System.Int32,System.Action{System.Int32})">
+            <summary>
+            Run using <see cref="T:ricaun.Revit.UI.StatusBar.RevitProgressBar"/>
+            </summary>
+            <param name="currentOperation"></param>
+            <param name="count"></param>
+            <param name="action"></param>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.RevitProgressBarUtils.Run``1(System.String,System.Collections.Generic.IEnumerable{``0},System.Action{``0})">
+            <summary>
+            Run using <see cref="T:ricaun.Revit.UI.StatusBar.RevitProgressBar"/>
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="currentOperation"></param>
+            <param name="collection"></param>
+            <param name="action"></param>
+        </member>
+        <member name="T:ricaun.Revit.UI.StatusBar.ApplicationUtils">
+            <summary>
+            ApplicationUtils
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.ApplicationUtils.DoEvents">
+            <summary>
+            DoEvents
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.ApplicationUtils.SetCursorWait">
+            <summary>
+            SetCursorWait
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.ApplicationUtils.SetCursorDefault">
+            <summary>
+            SetCursorDefault
+            </summary>
+        </member>
+        <member name="T:ricaun.Revit.UI.StatusBar.Utils.BalloonUtils">
+            <summary>
+            BalloonUtils
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.Utils.BalloonUtils.Show(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Show
+            </summary>
+            <param name="message"></param>
+            <param name="category"></param>
+            <param name="uri"></param>
+            <param name="favorite"></param>
+            <remarks>https://thebuildingcoder.typepad.com/blog/2014/03/using-balloon-tips-in-revit.html</remarks>
+        </member>
+        <member name="T:ricaun.Revit.UI.StatusBar.Utils.RevitRibbonController">
+            <summary>
+            RevitRibbonController
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.StatusBar.Utils.RevitRibbonController.RibbonControl">
+            <summary>
+            RibbonControl
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.Utils.RevitRibbonController.Enable">
+            <summary>
+            Enable
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.Utils.RevitRibbonController.Disable">
+            <summary>
+            Disable
+            </summary>
+        </member>
+        <member name="T:ricaun.Revit.UI.StatusBar.Utils.StatusBarController">
+            <summary>
+            StatusBarController
+            </summary>
+        </member>
+        <member name="P:ricaun.Revit.UI.StatusBar.Utils.StatusBarController.IsVisible">
+            <summary>
+            Default StatusBar is visible
+            </summary>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.Utils.StatusBarController.Show(System.Windows.FrameworkElement)">
+            <summary>
+            Show
+            </summary>
+            <param name="content"></param>
+        </member>
+        <member name="M:ricaun.Revit.UI.StatusBar.Utils.StatusBarController.Hide">
+            <summary>
+            Hide
+            </summary>
+        </member>
+    </members>
+</doc>
