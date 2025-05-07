@@ -49,3 +49,8 @@ Stacked Pull‑down buttons for elbows at 15° / 30° / 45° / 60° / 90
 - Update the UI
 - Add Version 2026
 - Fixed others bug
+
+## [1.0.2] - 2025-5-8
+- Add Connect Two Elbows
+- Update the UI
+- Fixed others bug (Align, Ui XAML, Rotate Fittings,...)
