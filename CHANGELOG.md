@@ -54,3 +54,10 @@ Stacked Pull‑down buttons for elbows at 15° / 30° / 45° / 60° / 90
 - Add Connect Two Elbows
 - Update the UI
 - Fixed others bug (Align, Ui XAML, Rotate Fittings,...)
+
+## [1.0.0.1] - 2025-8-15
+- Fix the LevelId in Revit 2022
+- Update to Revit 2026
+- Adding "Vertical Element" and "Align Tag To Element" in Utility.
+- Adding About panel
+- Fix others bugs...
