@@ -6,6 +6,8 @@ PaperMEP is a free Revit add‑in written in C# that provides a suite of handy M
 
 > **Inspired by** [Bird Tools](https://www.birdtools-developers.com/).
 
+> **Inspired by** [BIML]([https://github.com/pyrevitlabs/pyRevit](https://bimil.bimpeers.com/en)).
+
 > **Inspired by** [Pyrevit](https://github.com/pyrevitlabs/pyRevit).
 
 ---
@@ -24,10 +26,9 @@ Please read the [CHANGELOG](https://github.com/Cazorlas/PaperMEP-C/blob/main/CHA
 
 ### Option A: Run the installer
 1. Launch `PaperMEP-Setup.exe`.  
-2. The installer will automatically place the bundle in:
-  
-   `%ProgramData%\Autodesk\ApplicationPlugins\Paper MEP.bundle`
-
+2. The installer will automatically place the bundle in:  
+   `%appdata%\Autodesk\ApplicationPlugins\Paper MEP.bundle`
+3. The installer will run unins000.exe before installing
 
 ## 🚀 Unistall
 ### Option A: Run the Unistall.exe
