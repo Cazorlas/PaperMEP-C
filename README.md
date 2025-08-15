@@ -6,7 +6,7 @@ PaperMEP is a free Revit add‑in written in C# that provides a suite of handy M
 
 > **Inspired by** [Bird Tools](https://www.birdtools-developers.com/).
 
-> **Inspired by** [BIML](https://github.com/pyrevitlabs/pyRevit](https://bimil.bimpeers.com/en).
+> **Inspired by** [BIML](https://bimil.bimpeers.com/en).
 
 > **Inspired by** [Pyrevit](https://github.com/pyrevitlabs/pyRevit).
 
