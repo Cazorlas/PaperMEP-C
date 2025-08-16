@@ -4,6 +4,10 @@
 - PaperMEP does **not collect, store, or transmit** any personal information, project data, or user activity outside your local computer.  
 - All data processed by the add-in remains within your Autodesk Revit environment.  
 - We do not use third-party analytics, cookies, or background tracking.  
+- The add-in may record the **number of times a command is executed** for usage statistics:  
+  - This count is stored **locally** on your computer.  
+  - It is **not linked** to your identity, project data, or any personal information.  
+  - It is used only to improve the add-in by understanding which commands are most helpful.  
 
 ---
 
