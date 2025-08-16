@@ -60,6 +60,6 @@ You may **not**:
 For support, feedback, or bug reports, please contact:  
 
 - **Developer:** Hung Trinh (Paper Engineer)  
-- **Email:** [paper.engineer.contact@gmail.com](mailto:trinhvutuanhung@gmail.com)  
-- **LinkedIn:** [Hung Trinh Vu Tuan]([https://www.linkedin.com/in/h%C3%B9ng-tr%E1%BB%8Bnh-v%C5%A9-tu%E1%BA%A5n-2739b32a6/](https://www.linkedin.com/in/h%C3%B9ng-tr%E1%BB%8Bnh-v%C5%A9-tu%E1%BA%A5n-2739b32a6/))  
+- **Email:** [trinhvutuanhung@gmail.com](mailto:trinhvutuanhung@gmail.com)  
+- **LinkedIn:** [Hung Trinh Vu Tuan](https://www.linkedin.com/in/h%C3%B9ng-tr%E1%BB%8Bnh-v%C5%A9-tu%E1%BA%A5n-2739b32a6/)  
 - **YouTube:** [Paper Engineer Channel](https://www.youtube.com/@paper.engineer)  
