@@ -5,51 +5,67 @@
                     Name="Paper MEP"
                     AppVersion="1.0"
 					Description="Tools realting MEP"
-                    ProductCode="{F1B937E1-14E0-499B-9F91-A1DAE94111A5}"
-					Author="Paper Engineer"
+                    ProductCode="{F9DE0C11-78AC-4B45-926C-6CF8DD4479F1}"
+					Author="Cazorlas"
 					OnlineDocumentation="https://www.youtube.com/@paper.engineer">
 	
 	<CompanyDetails Name="Paper Engineer" Url="https://www.youtube.com/@paper.engineer" Email="trinhvutuanhung@gmail.com" />
-	<RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2022" SeriesMax="R2025" />
+	<RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2020" SeriesMax="R2026" />
 
 
+	<Components Description="2020">
+		<RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2020" SeriesMax="R2020" />
+		<ComponentEntry AppName="Paper MEP 2020"
+						Version="1.0.0.1"
+						ModuleName="./Contents/2020-2026/PaperMEP.addin"
+						AppDescription="Paper MEP 2020" />
+	</Components>
+
+	<Components Description="2021">
+		<RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2021" SeriesMax="R2021" />
+		<ComponentEntry AppName="Paper MEP 2021"
+						Version="1.0.0.1"
+						ModuleName="./Contents/2020-2026/PaperMEP.addin"
+						AppDescription="Paper MEP 2021" />
+	</Components>	
+	
 	<Components Description="2022">
 		<RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2022" SeriesMax="R2022" />
 		<ComponentEntry AppName="Paper MEP 2022"
-						Version="1.0.1"
-						ModuleName="./Contents/2022-2024/PaperMEP.addin"
-						AppDescription="Paper MEP 2023" />
+						Version="1.0.0.1"
+						ModuleName="./Contents/2020-2026/PaperMEP.addin"
+						AppDescription="Paper MEP 2022" />
 	</Components>
 
 	<Components Description="2023">
 		<RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2023" SeriesMax="R2023" />
 		<ComponentEntry AppName="Paper MEP 2023"
-						Version="1.0.1"
-						ModuleName="./Contents/2022-2024/PaperMEP.addin"
+						Version="1.0.0.1"
+						ModuleName="./Contents/2020-2026/PaperMEP.addin"
 						AppDescription="Paper MEP 2023" />
 	</Components>
 
 	<Components Description="2024">
 		<RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2024" SeriesMax="R2024" />
 		<ComponentEntry AppName="Paper MEP 2024"
-						Version="1.0.1"
-						ModuleName="./Contents/2022-2024/PaperMEP.addin"
+						Version="1.0.0.1"
+						ModuleName="./Contents/2020-2026/PaperMEP.addin"
 						AppDescription="Paper MEP 2004" />
 	</Components>
 
 	<Components Description="2025">
 		<RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2025" SeriesMax="R2025" />
 		<ComponentEntry AppName="Paper MEP 2025"
-						Version="1.0.1"
-						ModuleName="./Contents/2025/PaperMEP.addin"
+						Version="1.0.0.1"
+						ModuleName="./Contents/2020-2026/PaperMEP.addin"
 						AppDescription="Paper MEP 2005" />
 	</Components>
 
 		<Components Description="2026">
 		<RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2026" SeriesMax="R2026" />
 		<ComponentEntry AppName="Paper MEP 2026"
-						Version="1.0.1"
-						ModuleName="./Contents/2026/PaperMEP.addin"
+						Version="1.0.0.1"
+						ModuleName="./Contents/2020-2026/PaperMEP.addin"
 						AppDescription="Paper MEP 2006" />
 	</Components>
 
