@@ -61,3 +61,6 @@ Stacked Pull‑down buttons for elbows at 15° / 30° / 45° / 60° / 90
 - Adding "Vertical Element" and "Align Tag To Element" in Utility.
 - Adding About panel
 - Fix others bugs...
+
+- ## [1.0.0.2] - 2025-9-2
+- Update Split Ducts Tool
