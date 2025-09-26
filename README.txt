@@ -34,29 +34,6 @@ See the CHANGELOG here:
 https://github.com/Cazorlas/PaperMEP-C/blob/main/CHANGELOG.md
 
 ------------------------------------------------------
-🔒 Privacy Policy
-
-1. **Data Collected**
-   - PaperMEP uses Google API to log **the number of clicks and
-     command usage statistics**.
-   - No personal data, login information, or Revit model data is collected.
-
-2. **Purpose of Collection**
-   - To analyze feature usage and improve user experience.
-   - Data is **not** used for personal or commercial purposes.
-
-3. **Feedback Tool**
-   - When using the Feedback form inside PaperMEP, only the
-     information you explicitly type in the form is sent.
-   - The add-in does **not** collect any personal information
-     beyond what you provide in the form.
-
-4. **Security Commitment**
-   - Data is strictly used internally to improve the add-in.
-   - No sharing with third parties.
-   - No use for advertising or commercial exploitation.
-
-------------------------------------------------------
 🔗 Contact
 LinkedIn : https://www.linkedin.com/in/hùng-trịnh-vũ-tuấn-2739b32a6/
 YouTube  : https://www.youtube.com/@paper.engineer
