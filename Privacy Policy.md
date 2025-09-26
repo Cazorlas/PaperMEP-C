@@ -8,6 +8,9 @@
   - This count is stored **locally** on your computer.  
   - It is **not linked** to your identity, project data, or any personal information.  
   - It is used only to improve the add-in by understanding which commands are most helpful.  
+- **Feedback Tool**:  
+  - Only the information you explicitly type into the feedback form is transmitted.  
+  - The add-in does **not** collect any hidden personal data or additional system information.  
 
 ---
 
@@ -23,6 +26,7 @@
 - We are committed to providing ongoing improvements and fixes through updates.  
 - Feedback and bug reports will be addressed in a timely manner.  
 - Future enhancements will be driven by user requests and practical MEP workflows.  
+- Transparency is a priority: **no data collected will ever be sold, shared with third parties, or used for commercial exploitation.**
 
 ---
 
@@ -55,12 +59,23 @@ You may **not**:
 - This license will terminate automatically if you violate any terms of this agreement.  
 - Upon termination, you must uninstall and stop using the software.  
 
-### 4.7 Governing Law
+### 4.7 Intellectual Property
+- All rights, title, and interest in PaperMEP (including its name, design, and source code) remain the sole property of the developer.  
+- Unauthorized reproduction, distribution, or use of the brand **PaperMEP** is strictly prohibited.  
+
+### 4.8 Governing Law
 - This agreement shall be governed by the laws of **Vietnam**, without regard to conflict of law principles.  
 
 ---
 
-## 5. Contact Information
+## 5. User Responsibility
+- Users are solely responsible for ensuring compatibility of PaperMEP with their Revit version and project requirements.  
+- The add-in should be used responsibly and in compliance with Autodesk’s license terms.  
+- Always keep backup copies of your project files before running new tools or updates.  
+
+---
+
+## 6. Contact Information
 For support, feedback, or bug reports, please contact:  
 
 - **Developer:** Hung Trinh (Paper Engineer)  

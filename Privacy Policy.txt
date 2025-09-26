@@ -1,0 +1,45 @@
+# Privacy Policy & EULA – PaperMEP
+
+1) Privacy Policy
+- PaperMEP does not collect, store, or transmit any personal information, project data, or user activity outside your local computer.
+- All data processed by the add-in remains within your Autodesk Revit environment.
+- No third-party analytics, cookies, or background tracking are used.
+- The add-in may record the number of times a command is executed for usage statistics:
+  • This count is stored locally on your computer.
+  • It is not linked to your identity, project data, or any personal information.
+  • It is used only to improve the add-in by understanding which commands are most helpful.
+- Feedback Tool:
+  • Only the information explicitly typed into the feedback form is transmitted.
+  • No hidden personal data or additional system information is collected.
+
+2) Warranty & Disclaimer
+- PaperMEP is provided “as is”, free of charge.
+- We do not guarantee error-free operation in all project conditions or Revit versions.
+- The developer is not liable for any direct, indirect, or incidental damages arising from the use of this software.
+- Use on backup project files first before production.
+
+3) Commitment
+- Ongoing improvements and fixes will be delivered through updates.
+- Reported issues will be handled on a best-effort, timely basis.
+- No collected data will be sold, shared with third parties, or used for commercial exploitation.
+
+4) End User License Agreement (EULA)
+- Grant of License: non-exclusive, non-transferable, revocable license to use within Autodesk Revit for personal or commercial projects.
+- Restrictions: you may not reverse engineer, decompile, modify, sell, distribute, or sublicense without explicit permission; no unlawful use.
+- Warranty Disclaimer: provided “as is” with no warranties; no guarantee of uninterrupted or error-free operation.
+- Limitation of Liability: no liability for damages (including data loss, business interruption, or project delays).
+- Updates & Support: updates may be provided; support on a best-effort basis.
+- Termination: license terminates upon violation; you must uninstall and stop using the software.
+- Intellectual Property: all rights to PaperMEP (name, design, source code) remain with the developer; unauthorized use is prohibited.
+- Governing Law: Vietnam, without regard to conflict-of-law principles.
+
+5) User Responsibility
+- Ensure compatibility with your Revit version and project requirements.
+- Comply with Autodesk license terms.
+- Always keep backups of your project files.
+
+6) Contact
+Developer: Hung Trinh (Paper Engineer)
+Email: trinhvutuanhung@gmail.com
+LinkedIn: https://www.linkedin.com/in/h%C3%B9ng-tr%E1%BB%8Bnh-v%C5%A9-tu%E1%BA%A5n-2739b32a6/
+YouTube:  https://www.youtube.com/@paper.engineer
