@@ -40,6 +40,8 @@
 
 6) Contact
 Developer: Hung Trinh (Paper Engineer)
-Email: trinhvutuanhung@gmail.com
-LinkedIn: https://www.linkedin.com/in/h%C3%B9ng-tr%E1%BB%8Bnh-v%C5%A9-tu%E1%BA%A5n-2739b32a6/
-YouTube:  https://www.youtube.com/@paper.engineer
+LinkedIn : https://www.linkedin.com/in/hùng-trịnh-vũ-tuấn-2739b32a6/
+YouTube  : https://www.youtube.com/@paper.engineer
+Github	 : https://github.com/Cazorlas
+Email    : trinhvutuanhung@gmail.com
+Autodesk Store: [coming soon]
