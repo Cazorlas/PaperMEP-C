@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+    <AddIn Type="Application">
+		<Name>PaperMEP</Name>
+		<Assembly>PaperMEP\PaperMEP.1.0.0.dll</Assembly>
+        <AddInId>77308b11-829a-46b7-80d5-00b1db5d0fa1</AddInId>
+		<FullClassName>PaperMEP.App</FullClassName>
+        <VendorId>Cazorlas</VendorId>
+        <VendorDescription>https://www.youtube.com/@paper.engineer</VendorDescription>
+        <VendorEmail>trinhvutuanhung@gmail.com</VendorEmail>
+    </AddIn>
+</RevitAddIns>
