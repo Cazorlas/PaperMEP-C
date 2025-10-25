@@ -6,7 +6,7 @@ This project follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) an
 
 ---
 
-## [1.0.0] - 2025-09-26
+## [1.0.0] - 2025-25-25
 
 ### Added
 - **Rotate & Align**  
@@ -31,7 +31,6 @@ This project follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) an
 
 - **Utility**  
   - Split Duct — split ducts into segments  
-  - MEP UpDown — move elements up or down  
   - Vertical Element  
   - Align Tag To Element  
   - About panel
