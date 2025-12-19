@@ -6,7 +6,7 @@ This project follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) an
 
 ---
 
-## [1.0.0] - 2025-25-25
+## [1.0.0] - 2025-12-17
 
 ### Added
 - **Rotate & Align**  
@@ -34,3 +34,7 @@ This project follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) an
   - Vertical Element  
   - Align Tag To Element  
   - About panel
+
+## [1.0.1] - 2025-12-19
+### Fixex
+- Support all languages.
