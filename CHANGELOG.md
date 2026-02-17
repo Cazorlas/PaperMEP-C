@@ -42,4 +42,4 @@ This project follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) an
 ## [1.0.2] - 2026-02-17
 ### Fixex
 - Adding Mep UpDown for Version Revit 2021+
-- Improve performace and core.
+- Improve performance and core.
