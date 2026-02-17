@@ -16,7 +16,7 @@ available directly in the tooltip.
 
 ------------------------------------------------------
 📥 Installation
-1. Run PaperMEP.1.0.0.exe
+1. Run PaperMEP.1.0.2.exe
 2. The installer will automatically copy the bundle into:
    %appdata%\Autodesk\ApplicationPlugins\PaperMEP.bundle
 3. If an older version is detected, the installer will
