@@ -1,5 +1,5 @@
 ======================================================
-   PaperMEP 1.0.0 – Revit API Utilities
+   PaperMEP 1.0.2 – Revit API Utilities
 ======================================================
 
 PaperMEP is a free Autodesk Revit add-in,
